@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace AverageTwoInputs 
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Call the same method twice to get two numbers 
+            int num1 = GetNumber();
+            int num2 = GetNumber();
+
+            // Calculate and print average 
+            Console.WriteLine((num1 + num2) / 2);
+            Console.ReadLine();
+        }
+        // Reusable method that reads and returns an integer
+
+        private static int GetNumber()
+        {
+            return Convert.ToInt32(Console.ReadLine());
+        }
+    }
+}
